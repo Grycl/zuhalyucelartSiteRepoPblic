@@ -155,14 +155,38 @@
             .draw-card {
                 width: 90%;
             }
-            .contact-section {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-            .contact-section > div {
-                width: 100%;
-            }
+    @media only screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #F7F2EE; /* Arka plan rengini ayarlayın */
+        box-shadow: none; /* Gölgeyi kaldırın */
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .contact-section > div {
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+
+    .contact-section iframe {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .contact-section form {
+        width: 100%;
+    }
+}
         }
 
         /* Yatay ekranlar için stil */
@@ -408,28 +432,28 @@
         </div>
     </div>
 
-    <div id="contact" class="contact-section" style="display: none; padding: 40px; background-color: #F7F2EE; max-width: 300px; margin: auto; border-radius: 100px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); display: flex; justify-content: space-between; align-items: center; gap: 20px; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);">
-        <div style="width: 350%; position: absolute; right: 150px;">
-            <h2 style="color: #d4af37;">İletişim</h2>
-            <p style="font-size: 18px;">E-Posta: <strong>zuhalyucelart@gmail.com</strong></p>
-            <p style="font-size: 18px;">Adres: <strong>İstanbul, Türkiye</strong></p>
-            <div style="margin-top: 20px; text-align: left;">
-                <h3 style="color: #d4af37;">Sosyal Medya</h3>
-                <a href="https://www.instagram.com/zuhalyucelart/" style="color: red; margin-right: 10px; text-decoration: none;">INSTAGRAM</a>
-                 <a href="https://opensea.io/collection/zuzu-collection-first" style="color: red; margin-right: 10px; text-decoration: none;">NFT</a>
-            </div>
-            <form style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <input type="text" placeholder="Adınız" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
-                <input type="email" placeholder="E-Posta Adresiniz" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
-                <textarea placeholder="Mesajınız" rows="4" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;"></textarea>
-                <button type="button" onclick="sendEmail()" style="background-color: #d4af37; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Gönder</button>
-            </form>
+    <div id="contact" class="contact-section" style="display: none;">
+    <div style="width: 20%; margin: auto; text-align: center;">
+        <h2 style="color: #d4af37;">İletişim</h2>
+        <p style="font-size: 18px;">Telefon-WhatsApp: <strong>+90 505 394 5741</strong></p>
+        <p style="font-size: 18px;">E-Posta: <strong>zuhalyucelart@gmail.com</strong></p>
+        <p style="font-size: 18px;">Adres: <strong>İstanbul, Türkiye</strong></p>
+        <div style="margin-top: 20px; text-align: center;">
+            <h3 style="color: #d4af37;">Sosyal Medya</h3>
+            <a href="https://www.instagram.com/zuhalyucelart/" style="color: red; margin-right: 10px; text-decoration: none;">INSTAGRAM</a>
+            <a href="https://opensea.io/collection/zuzu-collection-first" style="color: red; margin-right: 10px; text-decoration: none;">NFT</a>
         </div>
-        <div style="position: absolute; top: 70px; left: 150px; width: 350%; text-align: center; background-color: #D9C7B7; padding: 20px; border-radius: 10px;">
-            <iframe width="100%" height="300" style="border:0; border-radius: 10px;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6021.793697812416!2d29.00299566869801!3d41.0668009073938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacbfa1db5301d%3A0xb9f4e2c26d3ef2b2!2sGayrettepe%2C%20Istanbul%2C%20Turkey!5e0!3m2!1sen!2sus!4v1646316883143">
-            </iframe>
-        </div>
+        <form style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; width: 100%;">
+            <input type="text" placeholder="Adınız" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
+            <input type="email" placeholder="E-Posta Adresiniz" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
+            <textarea placeholder="Mesajınız" rows="4" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;"></textarea>
+            <button type="button" onclick="sendEmail()" style="background-color: #d4af37; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Gönder</button>
+        </form>
     </div>
+    <div style="width: 50%; margin: auto; text-align: center; margin-bottom: 50px;">
+        <iframe width="100%" height="300" style="border:0; border-radius: 10px;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6021.793697812416!2d29.00299566869801!3d41.0668009073938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacbfa1db5301d%3A0xb9f4e2c26d3ef2b2!2sGayrettepe%2C%20Istanbul%2C%20Turkey!5e0!3m2!1sen!2sus!4v1646316883143"></iframe>
+    </div>
+</div>
      <div id="popup" class="popup">
         <div class="popup-content">
             <img id="popup-img" src="" alt="Popup Image">
@@ -452,11 +476,11 @@
         }
     </script>
     <script>
-        function showPage(page) {
-            document.getElementById('home').style.display = (page === 'home') ? 'block' : 'none';
-            document.getElementById('draws').style.display = (page === 'draws') ? 'block' : 'none';
-            document.getElementById('contact').style.display = (page === 'contact') ? 'block' : 'none';
-        }
+   function showPage(page) {
+    document.getElementById('home').style.display = (page === 'home') ? 'block' : 'none';
+    document.getElementById('draws').style.display = (page === 'draws') ? 'block' : 'none';
+    document.getElementById('contact').style.display = (page === 'contact') ? 'block' : 'none';
+}
     </script>
     <script>
         function sendEmail() {
